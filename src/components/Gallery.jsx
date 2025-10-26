@@ -3,13 +3,17 @@ import React, { useState, useCallback, useRef } from "react";
 import CustomButton from "./CustomButton";
 import { ArrowLeft, ArrowRight, CircleQuestionMark } from "lucide-react";
 import menu from '../assets/menu.svg';
+import img_1 from '../assets/3.jpg';
+import img_2 from '../assets/2.jpg';
+import img_3 from '../assets/1.jpg';
+import img_4 from '../assets/4.jpg';
 
 export default function Gallery() {
     const [images, setImages] = useState([
-        "https://picsum.photos/200?1",
-        "https://picsum.photos/200?2",
-        "https://picsum.photos/200?3",
-        "https://picsum.photos/200?4",
+        img_1,
+        img_2,
+        img_3,
+        img_4,
     ]);
     const [startIndex, setStartIndex] = useState(0);
     const inputRef = useRef(null);
